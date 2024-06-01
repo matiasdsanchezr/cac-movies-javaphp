@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <title>Detalles</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <a class="header__logo" href="./index.html">
+        <svg
+          fill="#fff"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 35.542 35.542"
+          xml:space="preserve"
+          class="header__logo-icon"
+        >
+          <g>
+            <path
+              d="M31.543,12.669H11.472l19.51-5.312c1.597-0.435,2.539-2.079,2.107-3.676l-0.312-1.154
+		c-0.208-0.771-0.713-1.425-1.402-1.821c-0.69-0.396-1.513-0.5-2.28-0.291L2.213,7.731c-1.599,0.435-2.541,2.082-2.107,3.681
+		l0.312,1.154c0.209,0.77,0.715,1.422,1.405,1.816c0.046,0.027,0.099,0.037,0.146,0.061c-0.427,0.637-0.677,1.4-0.677,2.227v14.562
+		c0,2.209,1.791,4,4,4h26.25c2.209,0,4-1.791,4-4V16.669C35.543,14.46,33.752,12.669,31.543,12.669z M24.329,25.27l-8.615,4.891
+		c-0.145,0.082-0.303,0.123-0.463,0.123c-0.164,0-0.326-0.043-0.473-0.129c-0.289-0.167-0.466-0.476-0.466-0.81v-9.782
+		c0-0.334,0.177-0.644,0.466-0.812s0.645-0.17,0.936-0.006l8.615,4.893c0.295,0.167,0.476,0.479,0.476,0.814
+		C24.803,24.791,24.624,25.103,24.329,25.27z"
+            />
+          </g>
+        </svg>
+        <div class="header__logo-text">
+          <span class="header__logo-title">Movies</span>
+          <span class="header__logo-subtitle">CaC</span>
+        </div>
+      </a>
+      <input type="checkbox" id="header-check" class="header__checkbox" />
+      <label for="header-check" class="header__hamburguer"
+        ><i class="fas fa-bars"></i
+      ></label>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="./index.html" class="header__link">Tendencias</a></li>
+          <li>
+            <a href="./registrarse.html" class="header__link">Registrarse</a>
+          </li>
+          <li>
+            <a href="./iniciosesion.html" class="header__link"
+              >Iniciar Sesión</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Contenido principal -->
+      <section class="movie-detail">
+        <div class="movie-detail__container">
+          <div class="movie-detail__image-container">
+            <img
+              class="movie-detail__image"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              alt=""
+            />
+          </div>
+          <div class="movie-detail__description-container">
+            <div class="movie-detail__header">
+              <h1 class="h1 movie-detail__title"></h1>
+              <p class="movie-detail__details"></p>
+            </div>
+            <div class="movie-detail__overview-container">
+              <h2 class="h2"></h2>
+              <p class="movie-detail__overview"></p>
+            </div>
+            <div class="movie-detail__credits-container"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Trailer de la pelicula -->
+      <section class="flex flex--center movie-trailer">
+        <div class="movie-trailer__trailer-container">
+          <h2>Ver trailer</h2>
+          <iframe
+            class="movie-trailer__iframe"
+            src=""
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+        <div class="movie-trailer__info-container">
+          <div class="movie-trailer__social-media">
+            <ul class="movie-trailer__social-media-list">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="fab fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" target="_blank"
+                  ><i class="fab fa-twitter" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://instagram.com//"
+                  ><i
+                    class="fab fa-instagram"
+                    target="_blank"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://google.com"
+                  ><i class="fas fa-link" target="_blank" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="movie-trailer__info-container">
+            <table class="movie-trailer__info-table">
+              <thead>
+                <tr>
+                  <th colspan="2">Info</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Estado</strong></td>
+                  <td id="status"></td>
+                </tr>
+                <tr>
+                  <td><strong>Idioma original</strong></td>
+                  <td id="original_language"></td>
+                </tr>
+                <tr>
+                  <td><strong>Presupuesto</strong></td>
+                  <td id="budget"></td>
+                </tr>
+                <tr>
+                  <td><strong>Ganancias</strong></td>
+                  <td id="revenue"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__button">Términos y condiciones</li>
+          <li class="footer__button">Preguntas frecuentes</li>
+          <li class="footer__button">Ayuda</li>
+          <li class="footer__button">Administrador Peliculas</li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script type="module" src="./detalles-scripts.js"></script>
+  </body>
+</html>

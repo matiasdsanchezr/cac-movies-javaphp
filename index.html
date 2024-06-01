@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <title>CAC-MOVIES</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a class="header__logo" href="./index.html">
+        <svg
+          fill="#fff"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 35.542 35.542"
+          xml:space="preserve"
+          class="header__logo-icon"
+        >
+          <g>
+            <path
+              d="M31.543,12.669H11.472l19.51-5.312c1.597-0.435,2.539-2.079,2.107-3.676l-0.312-1.154
+		c-0.208-0.771-0.713-1.425-1.402-1.821c-0.69-0.396-1.513-0.5-2.28-0.291L2.213,7.731c-1.599,0.435-2.541,2.082-2.107,3.681
+		l0.312,1.154c0.209,0.77,0.715,1.422,1.405,1.816c0.046,0.027,0.099,0.037,0.146,0.061c-0.427,0.637-0.677,1.4-0.677,2.227v14.562
+		c0,2.209,1.791,4,4,4h26.25c2.209,0,4-1.791,4-4V16.669C35.543,14.46,33.752,12.669,31.543,12.669z M24.329,25.27l-8.615,4.891
+		c-0.145,0.082-0.303,0.123-0.463,0.123c-0.164,0-0.326-0.043-0.473-0.129c-0.289-0.167-0.466-0.476-0.466-0.81v-9.782
+		c0-0.334,0.177-0.644,0.466-0.812s0.645-0.17,0.936-0.006l8.615,4.893c0.295,0.167,0.476,0.479,0.476,0.814
+		C24.803,24.791,24.624,25.103,24.329,25.27z"
+            />
+          </g>
+        </svg>
+        <div class="header__logo-text">
+          <span class="header__logo-title">Movies</span>
+          <span class="header__logo-subtitle">CaC</span>
+        </div>
+      </a>
+      <input type="checkbox" id="header-check" class="header__checkbox" />
+      <label for="header-check" class="header__hamburguer"
+        ><i class="fas fa-bars"></i
+      ></label>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="./index.html" class="header__link">Tendencias</a></li>
+          <li>
+            <a href="./registrarse.html" class="header__link"
+              >Registrarse</a
+            >
+          </li>
+          <li>
+            <a
+              href="./iniciosesion.html"
+              class="header__link header__link--highlight"
+              >Iniciar Sesión</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+      <!-- Sección de presentación -->
+      <section class="hero">
+        <h1 class="h1 hero__title">
+          Películas y series ilimitadas en un solo lugar
+        </h1>
+        <div class="hero__subtitle-list">
+          <p class="hero__subtitle">Disfruta donde quieras.</p>
+          <p class="hero__subtitle">Cancela en cualquier momento.</p>
+        </div>
+        <a href="./registrarse.html">
+          <button class="btn btn-primary">Registrate</button>
+        </a>
+      </section>
+
+      <!-- Sección de Busqueda -->
+      <section class="search">
+        <form class="search__form" id="search-form">
+          <h2 class="h2">¿Qué estas buscando para ver?</h2>
+          <input
+            class="input search__input"
+            type="text"
+            placeholder="Buscar..."
+          />
+          <button
+            class="btn btn--primary-outlined btn--badge search__button"
+            type="submit"
+          >
+            Buscar
+          </button>
+        </form>
+      </section>
+      <hr class="separator" />
+
+      <!-- Sección peliculas en tendencia -->
+      <section class="trending">
+        <h2 class="h2">Las tendencias de hoy</h2>
+        <div class="trending__container">
+          <div class="movie-card">
+            <a class="movie-card__link" href="./detalles.html">
+              <img
+                class="movie-card__image"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                loading="lazy"
+              />
+              <div class="movie-card__info">
+                <p class="movie-card__title">Dune: Part two</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex--center">
+          <a class="btn btn--primary-outlined" id="trending-button-previous"
+            >Anterior</a
+          >
+          <a class="btn btn--primary-outlined" id="trending-button-next"
+            >Siguiente</a
+          >
+        </div>
+      </section>
+      <hr class="separator" />
+
+      <!-- Sección peliculas mas valoradas -->
+      <section class="top-movies">
+        <h2 class="h2">Las más aclamadas</h2>
+        <div class="top-movies__container">
+          <div class="movie-card top-movies__movie-card">
+            <a class="movie-card__link" href="#">
+              <img
+                class="movie-card__image"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                alt="Migration"
+                loading="lazy"
+              />
+              <div class="movie-card__info">
+                <p class="movie-card__title">Lorem ipsum</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__button">Términos y condiciones</li>
+          <li class="footer__button">Preguntas frecuentes</li>
+          <li class="footer__button">Ayuda</li>
+          <li class="footer__button">Administrador Peliculas</li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script>
+      const searchForm = document.querySelector("#search-form");
+      searchForm.addEventListener("submit", (e) => {
+        let searchInput = document.querySelector(".search__input");
+        alert(`Estas buscando: ${searchInput.value}`);
+        e.preventDefault();
+      });
+    </script>
+    <script type="module" src="./index-scripts.js"></script>
+  </body>
+</html>
